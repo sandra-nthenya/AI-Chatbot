@@ -55,9 +55,6 @@ class ChatResponse(BaseModel):
     message: str
     session_id: str
 
-# In-memory storage (replace with database)
-sessions = {}
-messages = {}
 
 @app.get("/")
 async def root():
